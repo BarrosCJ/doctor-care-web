@@ -12,9 +12,16 @@ function openMenu() {
     document.body.classList.add('menu-expanded')
 }
 
-function closeMenu () {
+function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
+
+ScrollReveal({
+    origin: 'top',
+    distance:'30px',
+    duration:700,
+}).reveal('#home, header img, #home .stats');
+
 
 
 
